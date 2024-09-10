@@ -212,3 +212,15 @@ sp1->smartPointer();    // Directly accesses the object’s members via the poin
 Following the explanation above we can see how the smartPointer object sp1 is handled:
 - to access the data members of `MyClass` object directly using **`->`** operator as we would do in case of any raw pointer
 - to access the `MyClass` object directly using dereference operator *`*`* and then *`.`* to access its members
+
+The final output is :
+```
+MyClass Constructor is called
+smartPointer instance created, Contructor is called!!
+overloading arrow oprator
+MyClass instance function!
+overloading dereference operator
+MyClass instance function!
+smartPointer deleted, Destructor is called!!
+MyClass is going out of scope!!!! Destructor is called
+```
